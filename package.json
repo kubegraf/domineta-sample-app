@@ -1,7 +1,7 @@
 {
-  "name": "orkastor-sample-app",
+  "name": "domineta-sample-app",
   "version": "1.0.0",
-  "description": "A sample Node.js app to test Orkastor Cloud's automatic build and deploy pipeline. No Dockerfile — Orkastor detects the stack and generates one.",
+  "description": "A sample Node.js app to test Domineta's automatic build and deploy pipeline. No Dockerfile — Domineta detects the stack and generates one.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
