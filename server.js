@@ -14,10 +14,10 @@ const server = http.createServer((req, res) => {
   if (req.url === "/api/info") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify({
-      app: "orkastor-sample-app",
+      app: "domineta-sample-app",
       version: "1.0.0",
       runtime: `Node.js ${process.version}`,
-      deployed_on: "Orkastor Cloud",
+      deployed_on: "Domineta",
       env: process.env.NODE_ENV || "production",
       timestamp: now,
     }));
@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orkastor Sample App</title>
+  <title>Domineta Sample App</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -53,10 +53,10 @@ const server = http.createServer((req, res) => {
 </head>
 <body>
   <div class="container">
-    <h1>Running on <span class="accent">Orkastor Cloud</span></h1>
+    <h1>Running on <span class="accent">Domineta</span></h1>
     <p>
       This app was built and deployed automatically.<br>
-      No Dockerfile was provided — Orkastor detected Node.js and generated one.
+      No Dockerfile was provided — Domineta detected Node.js and generated one.
     </p>
     <div class="info">
       <strong>Runtime:</strong> Node.js ${process.version}<br>
@@ -72,5 +72,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(\`🚀 orkastor-sample-app listening on port \${PORT}\`);
+  console.log(\`🚀 domineta-sample-app listening on port \${PORT}\`);
 });
